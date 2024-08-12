@@ -24,12 +24,12 @@ const Popular: FC<PopularProps> = () => {
   return (
     <Container className="mt-5 p-5">
       <Row>
-        <Col lg={10}>
+        <Col xs={6} sm={9}>
           <h3 className="ms-3 mb-4">Popular Right Now</h3>
         </Col>
-        <Col className="d-flex justify-content-center gap-2">
+        <Col xs={6}sm={3}  className="d-flex justify-content-end gap-2">
           <h5>Shop</h5>
-          <div className="d-flex justify-content-center gap-2 mt-1">
+          <div className="d-flex justify-content-center gap-2 mt-1 ">
             <FaCircleChevronLeft onClick={scrollLeft} style={{ cursor: 'pointer' }}  />
             <FaCircleChevronRight onClick={scrollRight} style={{ cursor: 'pointer' }} />
           </div>
@@ -59,7 +59,6 @@ const Popular: FC<PopularProps> = () => {
             </Col>
           </Row>
         </div>
-        {/* Add more card components as needed */}
         <div style={{ minWidth: "30rem" }} className="me-3">
           <img
             src="https://static.nike.com/a/images/q_auto:eco/t_product_v1/f_auto/dpr_1.3/h_466,c_limit/fbe575e0-b8c7-45ea-8a71-fa20ae683c06/infinityrn-4-electric-road-running-shoes-FkGQcG.png"

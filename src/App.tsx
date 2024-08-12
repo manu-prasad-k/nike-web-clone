@@ -6,6 +6,8 @@ import Popular from './Components/popular/Popular';
 import Featured from './Components/featured/Featured';
 import DontMiss from './Dontmiss/DontMiss';
 import Member from './Components/Member/Member';
+import Footer from './Components/Footer/Footer';
+import Footer2 from './Components/Footer2/Footer2';
 
 
 function App() {
@@ -17,6 +19,8 @@ function App() {
       <Featured/>
       <DontMiss/>
       <Member/>
+      <Footer/>
+      <Footer2/>
     </div>
   );
 }

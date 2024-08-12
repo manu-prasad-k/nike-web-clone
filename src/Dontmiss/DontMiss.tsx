@@ -15,6 +15,9 @@ const DontMiss: FC<DontMissProps> = ({ }) => {
         <>
             <Container>
                 <Row>
+                <Col lg={10}>
+          <h3 className="ms-3 mb-4">Don't Miss</h3>
+        </Col>
                     <Col xs={12} md={6}  sm={12} className="p-0">
                         <Image src="https://static.nike.com/a/images/q_auto:eco/t_product_v1/f_auto/dpr_1.3/h_466,c_limit/ae14a560-14f7-4dfc-be44-023a518c77c1/invincible-3-electric-road-running-shoes-nhn3wf.png" fluid style={{ width: imageWidth, height: imageHeight, objectFit: 'cover' }}
                         />
