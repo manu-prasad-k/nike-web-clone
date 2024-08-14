@@ -22,20 +22,30 @@ const Popular: FC<PopularProps> = () => {
   };
 
   return (
-    <Container className="mt-5 p-5">
-      <Row>
-        <Col xs={6} sm={9}>
-          <h3 className="ms-3 mb-4">Popular Right Now</h3>
-        </Col>
-        <Col xs={6}sm={3}  className="d-flex justify-content-end gap-2">
-          <h5>Shop</h5>
-          <div className="d-flex justify-content-center gap-2 mt-1 ">
-            <FaCircleChevronLeft onClick={scrollLeft} style={{ cursor: 'pointer' }}  />
-            <FaCircleChevronRight onClick={scrollRight} style={{ cursor: 'pointer' }} />
-          </div>
-        </Col>
-      </Row>
-      <div className="d-flex overflow-x-scroll" ref={containerRef}>
+    <Container className='mt-5'>
+    <Row className="d-flex align-items-center">
+  <Col xs={6} sm={9} className="d-flex align-items-center">
+    <h3 className="mb-0" style={{ marginTop: '-1rem' }}>
+      Popular Right Now
+    </h3>
+  </Col>
+  <Col xs={6} sm={3} className="d-flex align-items-center justify-content-end gap-2 mb-2">
+    <h5 className="mb-0">Shop</h5>
+    <div className="d-flex justify-content-center gap-2">
+      <FaCircleChevronLeft
+        onClick={scrollLeft}
+        style={{ cursor: 'pointer', fontSize: '3rem' }}
+      />
+      <FaCircleChevronRight
+        onClick={scrollRight}
+        style={{ cursor: 'pointer', fontSize: '3rem' }}
+      />
+    </div>
+  </Col>
+</Row>
+
+
+      <div  className="d-flex overflow-x-scroll" ref={containerRef}>
         <div style={{ minWidth: "30rem" }} className="me-3">
           <img
             src="https://static.nike.com/a/images/q_auto:eco/t_product_v1/f_auto/dpr_1.3/h_466,c_limit/ae14a560-14f7-4dfc-be44-023a518c77c1/invincible-3-electric-road-running-shoes-nhn3wf.png"

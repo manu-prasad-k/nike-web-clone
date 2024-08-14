@@ -1,22 +1,20 @@
 import React, { FC } from 'react';
-import { Container, Navbar, Nav, Form, FormControl, InputGroup} from 'react-bootstrap';
+import { Container, Navbar, Nav, Form, FormControl, InputGroup } from 'react-bootstrap';
 import { SiNike } from 'react-icons/si';
 import { RiShoppingBag4Line } from "react-icons/ri";
-
+import { GoHeart } from "react-icons/go";
 
 interface HeaderProps {}
 
 const Header: FC<HeaderProps> = () => {
   return (
-    <Navbar  expand="lg">
+    <Navbar expand="lg" >
       <Container>
-        {/* Navbar Brand */}
-        <Navbar.Brand href="#home" className="fs-1 ">
-            <SiNike />
+        <Navbar.Brand href="#home" className="fs-1" >
+          <SiNike size={60} />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
-          {/* Centered Nav Links */}
           <Nav className="mx-auto">
             <Nav.Link href="#home" className="fw-bold">New & Featured</Nav.Link>
             <Nav.Link href="#link1" className="fw-bold">Men</Nav.Link>
@@ -26,21 +24,18 @@ const Header: FC<HeaderProps> = () => {
             <Nav.Link href="#link5" className="fw-bold">Customise</Nav.Link>
             <Nav.Link href="#link6" className="fw-bold">SNKRS</Nav.Link>
           </Nav>
-          {/* Search Form */}
-          <Form className="d-flex ms-auto">
+          <Form className="d-flex ms-auto align-items-center">
             <InputGroup>
               <FormControl
                 type="search"
                 placeholder="Search"
                 aria-label="Search"
               />
-              
             </InputGroup>
-            <div className='fs-4 ms-3 mb-1'>
-            <RiShoppingBag4Line />
-
+            <div className='d-flex align-items-center fs-4 ms-3' style={{cursor:'pointer'}}>
+              <GoHeart className='me-3' />
+              <RiShoppingBag4Line />
             </div>
-
           </Form>
         </Navbar.Collapse>
       </Container>

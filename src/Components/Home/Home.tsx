@@ -1,6 +1,5 @@
 import React, { FC } from 'react';
 import { Button, Col, Container, Row } from 'react-bootstrap';
-import { FaCircleChevronRight } from "react-icons/fa6";
 
 
 interface HomeProps {}
